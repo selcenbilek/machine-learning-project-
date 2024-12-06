@@ -85,3 +85,15 @@ model = LinearRegression()
 model.fit(train_set.drop("median_house_value", axis=1), train_set["median_house_value"])
 
 8.Sonuçları Paylaşma: Model performansını değerlendirin ve sonuçları raporlayın.
+
+Katkıda Bulunanlar
+Selcen Bilek
+
+Lisans
+Bu proje MIT lisansı altında lisanslanmıştır - ayrıntılar için LICENSE dosyasına bakın.
+
+
+Bu `README.md` dosyası, projenizin amacını, kullanılacak teknolojileri, veri setini ve proje adımlarını özetlemektedir. 
+
+
+
