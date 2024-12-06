@@ -46,6 +46,7 @@ Veri seti, Kaliforniya Nüfus Sayımı'ndan alınmıştır ve aşağıdaki özel
 1. **Gereksinimleri Yükleyin**:
    ```bash
    !pip install pandas numpy scikit-learn matplotlib seaborn
+   
 2.Veri Setini Yükleyin:
 
 python
@@ -53,25 +54,34 @@ import pandas as pd
 housing = pd.read_csv("housing.csv")
 
 3.Veri Keşfi ve Analizi:
+
 python
 housing.head()
 housing.describe()
 housing.info()
 4.Veri Temizleme:
+
 python
 housing = housing.dropna(subset=["total_bedrooms"])  # Eksik değerleri kaldırma örneği
+
 5.Özellik Mühendisliği ve Görselleştirme:
+
 python
 import matplotlib.pyplot as plt
 housing.hist(bins=50, figsize=(20,15))
 plt.show()
+
 6.Veri Bölme ve Model Eğitimi:
+
 python
 from sklearn.model_selection import train_test_split
 train_set, test_set = train_test_split(housing, test_size=0.2, random_state=42)
+
 7.Model Değerlendirme ve İyileştirme:
+
 python
 from sklearn.linear_model import LinearRegression
 model = LinearRegression()
 model.fit(train_set.drop("median_house_value", axis=1), train_set["median_house_value"])
+
 8.Sonuçları Paylaşma: Model performansını değerlendirin ve sonuçları raporlayın.
